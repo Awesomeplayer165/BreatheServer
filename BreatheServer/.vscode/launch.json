@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug FumeServer",
+            "program": "${workspaceFolder:FumeServer}/.build/debug/FumeServer",
+            "args": [],
+            "cwd": "${workspaceFolder:FumeServer}",
+            "preLaunchTask": "swift: Build Debug FumeServer"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release FumeServer",
+            "program": "${workspaceFolder:FumeServer}/.build/release/FumeServer",
+            "args": [],
+            "cwd": "${workspaceFolder:FumeServer}",
+            "preLaunchTask": "swift: Build Release FumeServer"
+        }
+    ]
+}
